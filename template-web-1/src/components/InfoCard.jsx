@@ -1,28 +1,13 @@
 import '../styles/info-card.css'
 
-const InfoCard = ({tittle,article,imgUrl}) => {
+const InfoCard = ({tittle,text,imgUrl,alt="imagen"}) => {
+
   return (
-    <main className="info-card-cont">
-       <section className="info-article">
-          <article className="">
-            <h2>{tittle}</h2>
-            <p>{article}</p> 
-          </article>
-          <figure className="info-img-cont">
-              <img src={imgUrl} alt="imagen" width={"200px"}  height={"170px"} className="info-img"/>
-          </figure>
-       </section>
-       
-        <section className="info-article">
-          <figure className="info-img-cont">
-              <img src={imgUrl} alt="imagen"  width={"200px"}  height={"170px"} className="info-img"/>
-          </figure>
-          <article>
-            <h2>{tittle}</h2>
-            <p>{article}</p> 
-          </article>
-       </section>
-    </main>
+  <section className='card'>
+    <h2 className='card-titlle'>{tittle}</h2>
+    <img src={imgUrl} alt={alt} className='card-img'/>
+    <p className='card-param'>{text}</p>
+  </section>
   )
 }
 

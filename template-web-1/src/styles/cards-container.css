@@ -1,0 +1,16 @@
+.card-cont-grid{
+    padding: 0.3rem;
+    width: 65%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    justify-self: center;
+    gap: 1.5rem;
+    background-color: aliceblue;
+}
+.h2-grid{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+}

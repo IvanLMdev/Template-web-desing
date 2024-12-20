@@ -7,33 +7,36 @@
   /* background-color: aliceblue; */
   /* padding: 0.4rem; */
   /* margin-bottom: 2rem; */
-  background: #ada996; /* fallback for old browsers */
+  background: #005aa7; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #eaeaea,
-    #dbdbdb,
-    #f2f2f2,
-    #ada996
+    #fffde4,
+    #005aa7
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #eaeaea,
-    #dbdbdb,
-    #f2f2f2,
-    #ada996
+    #fffde4,
+    #005aa7
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .nav-cont {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 20px 0 30px 0 #ffffffd7;
+  z-index: 2;
 }
 .logo-cont {
+  text-decoration: none;
+  cursor: pointer;
   margin: 0 0 0 2rem;
   display: flex;
+  gap: 1rem;
   align-items: center;
+  color: #000;
 }
 .ul-nav {
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +44,43 @@
   list-style: none;
   margin: 0 2rem 0 0;
 }
-.anchor-nav {
+
+.anchor {
   text-decoration: none;
-  color: black;
+  color: #000;
+}
+
+/*botton animations*/
+.btn-nav span {
+  color: #f0f2f0;
+}
+.btn-nav {
+  cursor: pointer;
+  position: relative;
+  width: 100px;
+  height: 40px;
+  text-decoration: none;
+  color: #000;
+  border: none;
+  background: none;
+}
+.btn-nav svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+}
+.btn-nav svg rect {
+  width: 100%;
+  height: 100%;
+  stroke: #d5e2fc;
+  stroke-width: 4px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: 0.7s ease all;
+}
+.btn-nav:hover rect {
+  stroke-dashoffset: 0;
 }

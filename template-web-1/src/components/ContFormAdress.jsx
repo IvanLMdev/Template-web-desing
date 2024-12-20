@@ -9,7 +9,7 @@ const ContFormAdress = () => {
         <div className='adress'>
             <h3>Locaciones</h3>
             <p>ubicacion</p>
-            <address>calle falsa 1233 lomas falsas</address>
+            <address>calle 1234 Avenida 1235</address>
         </div>
         <div className="follow">
           <h4>Siguenos en redes</h4>

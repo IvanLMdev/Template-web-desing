@@ -1,33 +1,31 @@
-.info-card-cont{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1.5rem;
-    width: 100%;
-    min-height: 100vh;
-    padding: 1.5rem;
+.card{
+  width: 100%;
+  max-width: 250px;
+  font-size: small;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem 0;
+  border-radius: 3px;
+  background-color: rgb(208, 212, 216);
+  box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.301);
+  cursor: pointer;
+  transition-duration: .4s;
+  transition-timing-function: ease-in;
+  transition-property: background scale;
 }
-.info-article{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+.card-titlle{
+  font-size: medium;
+  padding: 0 0.5rem;
 }
-.info-article article{
-    width: 50%;
+.card-img{
+  border-radius: 3px;
+  width: 100%;
 }
-.info-article article h2{
-    font-family: "Fjalla One", sans-serif;
-    font-weight: 300;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.card p{
+  padding: 0 0.5rem;
 }
-.info-article article p{
-   font-size: 1rem;
+@media(hover){
+.card:hover{
+  background-color: #97becf;
+  scale: 01.05;
 }
-.info-img-cont{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

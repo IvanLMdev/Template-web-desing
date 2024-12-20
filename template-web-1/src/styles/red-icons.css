@@ -1,6 +1,15 @@
 .icon-red-cont{
-    /* width: 100%; */
     display: flex;
-
-    gap: 2rem ;
+    cursor: pointer;
+    gap: 1rem ;
+}
+.icon-red-cont i{
+    transition-property: sacale background;
+    transition: 0.4s;
+}
+@media(hover){
+    .icon-red-cont i:hover{
+        scale: 01.5;
+        /* color: aliceblue; */
+    }
 }

@@ -28,7 +28,8 @@
 /*for form*/
 .cont-form{
     width: 55%;
-    background-color: rgb(208, 212, 216);
+    /* background-color: rgb(208, 212, 216); */
+    background-color: #97becf;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,6 +65,16 @@
     padding: 0.4rem;
 }
 .submit{
-    /* border: none; */
+    cursor: pointer;
+    background: none;
     min-height: 40px;
+    transition-duration: .4s;
+    transition-property: scale,background;
+   
+}
+.submit:hover{
+    font-weight: 400;
+    background-color: aliceblue;
+    scale: 01.01;
+    box-shadow: 0 0 10px 0 #ffffffbe;
 }

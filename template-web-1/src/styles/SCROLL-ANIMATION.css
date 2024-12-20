@@ -1,0 +1,74 @@
+@keyframes card-slide{
+    from{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.card{
+    view-timeline-name: --card;
+    view-timeline-axis: block;
+
+    animation-timeline: --card;
+    animation-name: card-slide;
+    animation-range: entry 25% cover 50% ;
+    animation-fill-mode: both ;
+}
+
+/* para el formulario*/
+@keyframes form-slide{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.form{
+        view-timeline-name: --form;
+        view-timeline-axis: block;
+    
+        animation-timeline: --form;
+        animation-name: form-slide;
+        animation-range: entry 25% cover 50%;
+        animation-fill-mode: both ;
+}
+
+/*image gallery*/
+@keyframes image-slide{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.image-cont{
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+    
+        animation-timeline: --image;
+        animation-name: image-slide;
+        animation-range: entry 25% cover 50%;
+        animation-fill-mode: both ;
+}
+/*banner del header*/
+@keyframes banner-slide{
+    from{
+        opacity: 1;
+        /* transform: translateX(-100px); */
+       
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-120px);
+       
+    }
+}
