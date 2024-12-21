@@ -18,3 +18,14 @@
 .image-cont{
     width: 75%;
 }
+
+@media(width < 650px){
+    .gallery-cont{
+        min-height: 100vh;
+        padding: 5rem 0 0 0;
+    }
+    .image-cont{
+        width: 80%;
+        min-height: 90vh;
+    }
+}

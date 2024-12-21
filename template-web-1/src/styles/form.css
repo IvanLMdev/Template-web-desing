@@ -78,3 +78,40 @@
     scale: 01.01;
     box-shadow: 0 0 10px 0 #ffffffbe;
 }
+
+/*Responsive*/
+
+@media(width < 760px){
+    .all-cont-form{
+        flex-direction: column;
+    }
+    .cont-form h3{
+        font-size: 2rem;
+    }
+    .cont-form{
+        width: 100%;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    .form{
+        width: 60%;
+    }
+    .cont-adress-link{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        order: 2;
+    }
+    .adress,.follow{
+        gap: 0.2rem;
+        font-size: smaller;
+    }
+}
+
+@media( width < 650px){
+    .cont-adress-link{
+        grid-template-columns: 1fr;
+        padding-top: 3rem;
+        gap: 3rem;
+    }
+}

@@ -4,20 +4,10 @@
   left: 0;
   width: 100%;
   min-height: 70px;
-  /* background-color: aliceblue; */
-  /* padding: 0.4rem; */
-  /* margin-bottom: 2rem; */
-  background: #005aa7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #fffde4,
-    #005aa7
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #fffde4,
-    #005aa7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #005aa7;
+  background: -webkit-linear-gradient(to right, #fffde4, #005aa7);
+  background: linear-gradient(to right, #fffde4, #005aa7);
+  transition: 0.6s ease;
 }
 .nav-cont {
   display: flex;
@@ -26,7 +16,8 @@
   box-shadow: 20px 0 30px 0 #ffffffd7;
   z-index: 2;
 }
-.logo-cont {
+.logo-cont,
+.logo-cont-hiden {
   text-decoration: none;
   cursor: pointer;
   margin: 0 0 0 2rem;
@@ -35,6 +26,7 @@
   align-items: center;
   color: #000;
 }
+/*contenedor de botones*/
 .ul-nav {
   width: 30%;
   display: flex;
@@ -44,43 +36,60 @@
   list-style: none;
   margin: 0 2rem 0 0;
 }
-
-.anchor {
-  text-decoration: none;
-  color: #000;
-}
-
-/*botton animations*/
-.btn-nav span {
-  color: #f0f2f0;
-}
-.btn-nav {
-  cursor: pointer;
-  position: relative;
-  width: 100px;
-  height: 40px;
-  text-decoration: none;
-  color: #000;
-  border: none;
-  background: none;
-}
-.btn-nav svg {
-  width: 100%;
-  height: 100%;
+/*navegacion en dispositivos movil*/
+.nav-movil {
   position: absolute;
   top: 0;
   left: 0;
-  fill: none;
-}
-.btn-nav svg rect {
   width: 100%;
-  height: 100%;
-  stroke: #d5e2fc;
-  stroke-width: 4px;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  transition: 0.7s ease all;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
 }
-.btn-nav:hover rect {
-  stroke-dashoffset: 0;
+.logo-cont-hidden {
+  opacity: 0;
+  position: none;
+}
+.menu-hambuger {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/*Responsive*/
+@media (width < 760px) {
+  .nav-cont {
+    position: absolute;
+    min-height: 100vh;
+    left: 0%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #0059a7e7;
+    box-shadow: none;
+  }
+  .ul-nav {
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+  .logo-cont {
+    pointer-events: none;
+    opacity: 0;
+  }
+  .logo-cont-hidden {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .menu-hambuger {
+    pointer-events: all;
+    opacity: 1;
+  }
+  .menu-show {
+    transform: translateX(0px);
+  }
+  .menu-hid {
+    transform: translateX(-200px);
+  }
 }

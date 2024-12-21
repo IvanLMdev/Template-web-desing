@@ -13,3 +13,12 @@
         /* color: aliceblue; */
     }
 }
+
+
+/*responsive*/
+@media (width < 760px){
+    .icon-red-cont{
+        width: 100%;
+        justify-content: center;
+    }
+}

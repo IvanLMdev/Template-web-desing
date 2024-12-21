@@ -14,3 +14,17 @@
     text-align: center;
     padding: 2rem 0;
 }
+/*Responsive*/
+@media (width < 760px){
+    .card-cont-grid{
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+    }
+}
+
+@media(width < 650px){
+    .card-cont-grid{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}

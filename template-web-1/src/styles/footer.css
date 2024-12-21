@@ -35,6 +35,16 @@
   font-size: large;
 }
 .derechos {
+  font-size: small;
   margin-top: 2rem;
   /* width: 100%; */
 }
+
+/*Responsive*/
+@media(width < 760px){
+  .derechos{
+    font-size: smaller;
+  }
+}
+
+

@@ -29,3 +29,20 @@
   scale: 01.05;
 }
 }
+
+/*Responsive*/
+@media(width < 650px){
+  .card{
+    width: 70%;
+    max-width: 400px;
+  }
+}
+
+
+
+
+
+
+
+
+

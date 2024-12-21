@@ -8,7 +8,7 @@ const ImageGallery = () => {
     <div className="gallery-cont">
       <h2 id="images">Galeria de imagenes</h2>
       <section className="image-cont">
-        <ReactImageGallery items={images} thumbnailPosition="left" />
+        <ReactImageGallery items={images} thumbnailPosition="bottom" />
       </section>
     </div>
   );
