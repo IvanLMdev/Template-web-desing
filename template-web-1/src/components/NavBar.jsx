@@ -25,8 +25,8 @@ const NavBar = () => {
         <strong>Logo de tu Empresa</strong>
       </a>
         <ul className="ul-nav">
-          <ButtonNav hraf={"#articles"} text={"Blog"} />
-          <ButtonNav hraf={"#images"} text={"Fotos"} />
+          <ButtonNav hraf={"#articles"} text={"Servicios"} />
+          <ButtonNav hraf={"#images"} text={"Proyectos"} />
           <ButtonNav hraf={"#contact"} text={"Contacto"} />
         </ul>
       </nav>

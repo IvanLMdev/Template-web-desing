@@ -11,7 +11,7 @@ const Footer = () => {
             <ul>
                 <li><a href=""> <SlScreenSmartphone /> 11 111 111 </a></li>
             </ul>
-        <p className="derechos">derechos reservasdo<MdCopyright/>empresa 2024</p>
+        <p className="derechos">derechos reservados<MdCopyright/> Tu empresa 2024</p>
         </section>
     </footer>
   )

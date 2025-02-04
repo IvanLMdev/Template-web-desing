@@ -1,4 +1,4 @@
-import { RiMailSendFill } from "react-icons/ri";
+
 
 const Form = () => {
   return (
@@ -22,7 +22,7 @@ const Form = () => {
           <textarea name="message" placeholder="Una consulta?" required></textarea>
         </section>
         <button type="submit" className="submit">
-          Enviar <span className="submit-icon hidden-icon"> <RiMailSendFill /></span>
+          Enviar 
         </button>
       </form>
     </section>

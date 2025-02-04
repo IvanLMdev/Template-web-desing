@@ -6,7 +6,7 @@ import { image_for_gallery as images } from "./utilities/image_gallery";
 const ImageGallery = () => {
   return (
     <div className="gallery-cont">
-      <h2 id="images">Galeria de imagenes</h2>
+      <h2 id="images">Proyectos</h2>
       <section className="image-cont">
         <ReactImageGallery items={images} thumbnailPosition="bottom" />
       </section>
