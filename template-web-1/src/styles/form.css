@@ -1,4 +1,5 @@
 .all-cont-form{
+    margin-top: 3rem;
     width: 100%;
     min-height: 100vh;
     background-color: aliceblue;
@@ -28,8 +29,11 @@
 /*for form*/
 .cont-form{
     width: 55%;
-    /* background-color: rgb(208, 212, 216); */
-    background-color: #97becf;
+    background-image: url('../assets/contac-img/form_background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #97becf; */
     display: flex;
     flex-direction: column;
     justify-content: center;

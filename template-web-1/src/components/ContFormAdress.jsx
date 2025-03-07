@@ -1,5 +1,6 @@
 import RedIcons from "./other/RedIcons";
 import Form from "./Form";
+import { MdCopyright } from "react-icons/md";
 import "../styles/form.css";
 
 const ContFormAdress = () => {
@@ -13,8 +14,7 @@ const ContFormAdress = () => {
         </div>
         <div className="follow">
           <h4>Siguenos en redes</h4>
-          <RedIcons />
-          <p>texto de prueva en icons contact</p>
+          <RedIcons /><p>Derechos reservdos <span><MdCopyright /></span>Archie growth</p>
         </div>
       </section>
       <Form />

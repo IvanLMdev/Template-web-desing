@@ -1,0 +1,45 @@
+
+.service-grid-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+.header-service{
+    grid-column: 1/3;
+}
+.title-service{
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+.aside-1-service{
+    text-align: justify;
+    width: 80%;
+}
+.card-service-cont{
+    display: flex;
+    gap: 1.5rem;
+}
+
+/*Responsive*/
+
+@media(width < 1200px){
+    .aside-1-service{
+        grid-column: 1/3;
+        width: 100%;
+    }
+
+    .section-2-service{
+        grid-column: 1/3
+    }
+}
+
+@media(width < 570px){
+    .card-service-cont{
+        flex-direction: column;
+    }
+}
+
+
+
+
+

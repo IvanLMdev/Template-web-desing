@@ -1,16 +1,21 @@
 import ReactImageGallery from "react-image-gallery";
 import "../styles/image-gallery.css";
 import "react-image-gallery/styles/css/image-gallery.css";
-import { image_for_gallery as images } from "./utilities/image_gallery";
 
-const ImageGallery = () => {
+const ImageGallery = ({ items, text , title}) => {
   return (
-    <div className="gallery-cont">
-      <h2 id="images">Proyectos</h2>
-      <section className="image-cont">
-        <ReactImageGallery items={images} thumbnailPosition="bottom" />
-      </section>
-    </div>
+    <section className="stiky-cont">
+      <div className="gallery-cont">
+        <section className="image-cont">
+          <ReactImageGallery items={items} showThumbnails={false} />
+        </section>
+          <article className="article-gallery">
+            <h4>{title}</h4>
+            <br />
+            <p>{text}</p>
+          </article>
+      </div>
+    </section>
   );
 };
 

@@ -40,7 +40,7 @@
 }
 
 /*image gallery*/
-@keyframes image-slide{
+/* @keyframes image-slide{
     from{
         opacity: 0;
         transform: translateX(100px);
@@ -58,7 +58,7 @@
         animation-name: image-slide;
         animation-range: entry 25% cover 50%;
         animation-fill-mode: both ;
-}
+} */
 /*banner del header*/
 @keyframes banner-slide{
     from{

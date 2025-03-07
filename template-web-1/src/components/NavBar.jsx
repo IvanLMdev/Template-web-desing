@@ -1,4 +1,5 @@
 import ButtonNav from "./other/ButtonNav";
+import logo_NEGRO from "../assets/brads/LOGOS/logo_NEGRO.png"
 import { TiThMenuOutline } from "react-icons/ti";
 import { useState } from "react";
 import "../styles/nav-bar.css";
@@ -17,16 +18,15 @@ const NavBar = () => {
       <nav className={`nav-cont ${onMenu.value}`}>
       <a className="logo-cont">
         <img
-          src="https://cdn2.iconfinder.com/data/icons/home-house-building-02/1000/Home-08-512.png"
+          src={`${logo_NEGRO}`}
           alt=""
-          width={"30rem"}
-          height={"30rem"}
+          width={"90px"}
+          height={"60px"}
         />
-        <strong>Logo de tu Empresa</strong>
       </a>
         <ul className="ul-nav">
-          <ButtonNav hraf={"#articles"} text={"Servicios"} />
-          <ButtonNav hraf={"#images"} text={"Proyectos"} />
+          <ButtonNav hraf={"#servicios"} text={"Servicios"} />
+          <ButtonNav hraf={"#proyectos"} text={"Proyectos"} />
           <ButtonNav hraf={"#contact"} text={"Contacto"} />
         </ul>
       </nav>
@@ -35,12 +35,11 @@ const NavBar = () => {
       <nav className="nav-movil">
       <a className="logo-cont-hidden">
         <img
-          src="https://cdn2.iconfinder.com/data/icons/home-house-building-02/1000/Home-08-512.png"
+          src={`${logo_NEGRO}`}
           alt=""
-          width={"30rem"}
-          height={"30rem"}
+          width={"90px"}
+          height={"60px"}
         />
-        <strong>Logo Empresa</strong>
       </a>
       <i className="menu-hamburger" onClick={onClick}>
         <TiThMenuOutline size={"1.3rem"}/>

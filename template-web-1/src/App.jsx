@@ -1,8 +1,8 @@
-import ImageGallery from "./components/ImageGallery";
+
 import Header from "./components/Header";
 import ContFormAdress from "./components/ContFormAdress";
-import Footer from "./components/Footer";
-import CardsContainer from "./components/CardsContainer";
+import SectionGallery from "./components/SectionGallery";
+import Service from "./components/Service";
 import "./styles/app.css";
 import './/styles/SCROLL-ANIMATION.css'
 
@@ -10,10 +10,9 @@ function App() {
   return (
     <>
       <Header />
-      <CardsContainer/>
-      <ImageGallery />
+      <Service/>
+      <SectionGallery/>
       <ContFormAdress />
-      <Footer />
     </>
   );
 }

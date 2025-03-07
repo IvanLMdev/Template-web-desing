@@ -4,9 +4,7 @@
   left: 0;
   width: 100%;
   min-height: 70px;
-  background: #005aa7;
-  background: -webkit-linear-gradient(to right, #fffde4, #005aa7);
-  background: linear-gradient(to right, #fffde4, #005aa7);
+  background: rgb(255, 255, 255);
   transition: 0.6s ease;
 }
 .nav-cont {
@@ -63,16 +61,19 @@
     position: absolute;
     min-height: 100vh;
     left: 0%;
-    width: 25%;
+    width: 40%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
     background: #0059a7e7;
     box-shadow: none;
   }
   .ul-nav {
+    width: 100%;
     margin-top: 3rem;
     flex-direction: column;
+    align-items: center;
   }
   .logo-cont {
     pointer-events: none;

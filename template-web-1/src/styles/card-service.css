@@ -1,0 +1,29 @@
+
+.img-card-serv{
+    max-width: 200px;
+}
+.card-serv p{
+    font-size: small;
+}
+
+
+/* Responsive */
+@media(width < 900px){
+    .img-card-serv{
+        max-width: 160px;
+    }
+}
+@media(width < 660px){
+    .img-card-serv{
+        max-width: 120px;
+    }
+}
+@media(width < 570px){
+    .card-serv{
+        display: flex;
+        gap: 0.3rem;
+    }
+    .card-serv section{
+        text-align: center;
+    }
+}
